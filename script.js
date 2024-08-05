@@ -41,6 +41,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // About
     document.getElementById('about').textContent = RESUME_DATA.about;
 
+    // Education
+    const education = document.getElementById('education');
+    RESUME_DATA.education.forEach(edu => {
+        const eduDiv = document.createElement('div');
+        eduDiv.classList.add('education-item');
+        eduDiv.innerHTML = `
+              <div class="card">
+                <div class="card-info">                
+                <h3>${edu.degree}</h3>
+                <p>${edu.school}</p>
+                <p>${edu.start}${edu.end ? ' - ' + edu.end : ' - Present'}</p>
+                </div>
+              </div>
+          `;
+        education.appendChild(eduDiv);
+    });
+
     // Papers
     const papers = document.getElementById('papers');
     RESUME_DATA.papers.forEach(paper => {
@@ -93,14 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
               <p class="card-summary">${job.description}</p>
               </div>  
               `;
-        // Add logo if available
-        // if (job.logo) {
-        //     const logoImg = document.createElement('img');
-        //     logoImg.src = job.logo;
-        //     logoImg.alt = job.company;
-        //     logoImg.style.width = '100px'; // Adjust logo size as needed
-        //     jobDiv.prepend(logoImg);
-        // }
         workExperience.appendChild(jobDiv);
     });
 
@@ -139,43 +148,4 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         volunteering.appendChild(volunteerDiv);
     });
-
-    // Education
-    const education = document.getElementById('education');
-    RESUME_DATA.education.forEach(edu => {
-        const eduDiv = document.createElement('div');
-        eduDiv.classList.add('education-item');
-        eduDiv.innerHTML = `
-              <div class="card">
-                <div class="card-info">                
-                <h3>${edu.degree}</h3>
-                <p>${edu.school}</p>
-                <p>${edu.start}${edu.end ? ' - ' + edu.end : ' - Present'}</p>
-                </div>
-              </div>
-          `;
-        education.appendChild(eduDiv);
-    });
-
-    // Projects
-    // const projects = document.getElementById('projects');
-    // RESUME_DATA.projects.forEach(project => {
-    //     const projectDiv = document.createElement('div');
-    //     projectDiv.classList.add('project');
-    //     projectDiv.innerHTML = `
-    //           <h3>${project.title}</h3>
-    //           <p>${project.description}</p>
-    //           <p><strong>Technologies:</strong> ${project.techStack.join(', ')}</p>
-    //           <a href="${project.link.href}" target="_blank">${project.link.label}</a>
-    //       `;
-    //     // Add logo if available
-    //     if (project.logo) {
-    //         const logoImg = document.createElement('img');
-    //         logoImg.src = project.logo;
-    //         logoImg.alt = project.title;
-    //         logoImg.style.width = '100px'; // Adjust logo size as needed
-    //         projectDiv.prepend(logoImg);
-    //     }
-    //     projects.appendChild(projectDiv);
-    // });
 });

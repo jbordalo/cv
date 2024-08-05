@@ -167,3 +167,25 @@ h3 {
 .project p {
     margin: 5px 0;
 }
+
+@media only screen and (max-width: 1270px) {
+    .container {
+      width: 90%;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+header {
+    flex-direction: column-reverse;
+}
+.profile-pic-wrapper {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bio {
+    width: 90%;
+}
+
+}
