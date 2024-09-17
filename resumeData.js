@@ -70,6 +70,10 @@ export const RESUME_DATA = {
           link: "papers/2405.10122.pdf"
         },
         {
+          name: "poster",
+          link: "posters/acl2024_poster.pdf"
+        },
+        {
           name: "code",
           link: "https://github.com/novasearch/generating-coherent-sequences"
         },
