@@ -78,8 +78,8 @@ export const RESUME_DATA = {
           link: "https://github.com/novasearch/generating-coherent-sequences"
         },
         {
-          name: "arXiv",
-          link: "https://arxiv.org/abs/2405.10122"
+          name: "acl",
+          link: "https://aclanthology.org/2024.acl-long.690/"
         }
       ]
     },
