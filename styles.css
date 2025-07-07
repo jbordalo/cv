@@ -200,6 +200,10 @@ header {
         display: none !important;
     }
 
+    .paper-link-button {
+        display: none !important;
+    }
+
     .page-break {
         page-break-before: always;
     }
