@@ -137,6 +137,17 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "NOVA School of Science and Technology",
+      company_link: "https://www.fct.unl.pt/",
+      link: "https://guia.unl.pt/en/2022/fct/program/1053/course/11155",
+      badges: ["Teaching", "Operating Systems"],
+      title: "Teaching Assistant - Operating Systems Foundations",
+      logo: NOVA,
+      start: "Sep 2025",
+      end: "Present", // "Jan 2026"
+      description: "Teaching the practical labs for the Operating Systems Foundations class at NOVA SST. Operating Systems Foundations is a 2nd year course which introduces the students to the main responsibilities of an Operating System, such as CPU management, memory management, concurrent programming, I/O, and virtualization.",
+    },
+    {
       company: "NOVA Laboratory for Computer Science and Informatics",
       company_link: "https://nova-lincs.di.fct.unl.pt/",
       link: "https://www.project-tardis.eu/",
@@ -246,7 +257,7 @@ export const RESUME_DATA = {
       title: "EXPO Faculdade de Ciências e Tecnologias 2024",
       organization: "NOVA School of Science and Technology | FCT NOVA",
       organizationUrl: "https://fct.unl.pt",
-      // certificateUrl: 'certificates/expo_certificate.pdf', // Uncomment if a certificate will be added later
+      // certificateUrl: 'certificates/expo_certificate.pdf',
       date: "Apr 10, 2024",
       description: "Volunteer at EXPO Faculdade de Ciências e Tecnologias 2024."
     }
